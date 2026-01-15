@@ -12,6 +12,12 @@
         <li>Fichier 4 : <xsl:value-of select="php:function('readdir')"/></li>
         <li>Fichier 5 : <xsl:value-of select="php:function('readdir')"/></li>
         <li>Fichier 6 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 1 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 2 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 3 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 4 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 5 : <xsl:value-of select="php:function('readdir')"/></li>
+        <li>Fichier 6 : <xsl:value-of select="php:function('readdir')"/></li>
       </ul>
 
       <p>Fermeture : <xsl:value-of select="php:function('closedir')"/></p>
