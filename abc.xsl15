@@ -3,7 +3,7 @@
 <xsl:template match="/">
   <html>
     <body>
-      <p>Ouverture du dossier : <xsl:value-of select="php:function('opendir', '/challenge/web-serveur/ch50/')"/></p>
+      <p>Ouverture du dossier : <xsl:value-of select="php:function('opendir', '/challenge/web-serveur/ch50/.6ff3200bee785801f420fba826ffcdee')"/></p>
       
       <ul>
         <li>Fichier 1 : <xsl:value-of select="php:function('readdir')"/></li>
